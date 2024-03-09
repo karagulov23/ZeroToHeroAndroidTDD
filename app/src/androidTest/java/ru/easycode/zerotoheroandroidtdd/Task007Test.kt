@@ -50,7 +50,7 @@ class Task007Test {
 
         onView(withId(R.id.changeButton)).perform(ViewActions.click())
         onView(withId(R.id.titleTextView)).check(matches(withText("I am an Android Developer!")))
-
+    
         activityScenarioRule.scenario.recreate()
         onView(withId(R.id.titleTextView)).check(matches(withText("I am an Android Developer!")))
     }
